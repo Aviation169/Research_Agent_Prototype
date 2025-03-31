@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 logger = logging.getLogger()
 
 class ResearchAgent:
-    def __init__(self, model_path: str = r"G:\My Drive\llama-3.2-3b-instruct"):
+    def __init__(self, model_path: str = r""): #👉 If you don’t have the model, you can download it from this link: https://drive.google.com/drive/folders/1EUpuE5uDAIozW-Sqh6mquE7RJibQDvDf?usp=sharing
         self.data = []
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         logger.info(f"Using device: {self.device}")
